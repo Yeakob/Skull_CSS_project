@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: rgba(0, 0, 0, 0.733);
+        }
+        .square1
+        {
+            z-index: 100;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255, 255, 255, 0.788);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+            animation-name: Myanimation1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            border: none;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.425) ,-5px -5px 5px rgba(255, 0, 0, 0.445) ,-5px 5px 5px rgba(255, 0, 0, 0.452), 5px -5px 5px rgba(255, 0, 0, 0.411);
+        }
+        .square2
+        {
+            z-index: 0;
+            position: absolute;
+            height: 50px;
+            width: 120px;
+            background-color: rgba(255, 255, 255, 0.788);
+            top: 113%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            border-bottom-left-radius: 10%;
+            border-bottom-right-radius: 10%;
+            animation-name: Myanimation2;
+            animation-duration: 3s;
+        overflow: hidden;
+            animation-iteration-count: infinite;
+        }
+        .circule3
+        {
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            background-color:black;
+            top: 80%;
+            left: 57%;
+            transform: translate(-80%,-50%);
+            border-radius: 50%;
+        }
+        .circule2
+        {
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            background-color:red;
+            top: 50%;
+            left: 80%;
+            transform: translate(-80%,-50%);
+            border-radius: 50%;
+            animation-name: Myanimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+           
+        }
+        .circule1
+        {
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            background-color: red;
+            top: 50%;
+            left: 20%;
+            transform: translate(-20%,-50%);
+            border-radius: 50%;
+            animation-name: Myanimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        
+        
+        }
+        @keyframes Myanimation
+        {
+            0%
+            {
+                background-color: rgb(0, 0, 0);
+            }
+            50%
+            {
+                background-color: red;
+                box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.425) ,-5px -5px 5px rgba(255, 0, 0, 0.445) ,-5px 5px 5px rgba(255, 0, 0, 0.452), 5px -5px 5px rgba(255, 0, 0, 0.411);
+            }
+            100%
+            {
+                background-color: rgba(0, 0, 0, 0.979);
+        
+            }
+        }
+        @keyframes Myanimation1
+        {
+            0%
+            {
+            box-shadow: 0 0 0 black;
+            }
+            50%
+            {
+                
+                box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.425) ,-5px -5px 5px rgba(255, 0, 0, 0.445) ,-5px 5px 5px rgba(255, 0, 0, 0.452), 5px -5px 5px rgba(255, 0, 0, 0.411);
+            }
+            100%
+            {
+                box-shadow: 0 0 0 black;
+        
+            }
+        }
+        @keyframes Myanimation2
+        {
+            0%
+            {
+            box-shadow: 0 0 0 black;
+            }
+            50%
+            {
+                
+                box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.425) ,5px 5px 5px rgba(255, 0, 0, 0.445) ,-5px 0px 5px rgba(255, 0, 0, 0.452), 0px 0px 5px rgba(255, 0, 0, 0.411);
+            }
+            100%
+            {
+                box-shadow: 0 0 0 black;
+        
+            }
+        }
+        
+        span
+        {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            z-index: 1000;
+            height: 50px;
+            width: 10px;
+            background-color: rgba(0, 0, 0, 0.733);
+        }
+        .no1
+        {
+            margin-top: 20px;
+            margin-left: 30px;
+            animation-name: Myanimation1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+    
+        }
+        .no2
+        {
+            margin-top: 20px;
+            margin-left: 55px;
+            animation-name: Myanimation1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .no3
+        {
+            margin-top: 20px;
+            margin-left: 80px;
+            animation-name: Myanimation1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="body">
+            <div class="square1">
+                <div class="circule1">
+                    
+                </div>
+                <div class="circule2">
+
+                </div>
+                <div class="circule3">
+
+                </div>
+                <div class="square2">
+                    <span class="no1"></span>
+                    <span class="no2"></span>
+                    <span class="no3"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('mousemove',function(e){
+        const all = document.querySelector('.square1');
+        all.style.left= e.pageX+'px';
+        all.style.top=e.pageY+'px';
+    });
+</script>
+</body>
+</html>
